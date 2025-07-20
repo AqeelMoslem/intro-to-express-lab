@@ -76,7 +76,7 @@ app.get('/shoes', (req, res) => {
     if (type) {
         results = results.filter(shoe => shoe.type === type)
     }
-    res.json(results)
+    res.send(results)
 })
 
 
